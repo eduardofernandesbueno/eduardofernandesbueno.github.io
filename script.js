@@ -30,16 +30,21 @@
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Open navigation');
   }));
-  filters.forEach(button => button.addEventListener('click', () => {
-    const selected = button.dataset.filter;
+  const applyProjectFilter = selected => {
     filters.forEach(item => {
-      const active = item === button;
+      const active = item.dataset.filter === selected;
       item.classList.toggle('active', active);
       item.setAttribute('aria-pressed', String(active));
     });
     projects.forEach(project => {
-      project.hidden = selected !== 'all' && !project.dataset.categories.split(' ').includes(selected);
+      project.hidden = selected === 'featured'
+        ? project.hasAttribute('data-secondary')
+        : selected !== 'all' && !project.dataset.categories.split(' ').includes(selected);
     });
+  };
+  filters.forEach(button => button.addEventListener('click', () => {
+    applyProjectFilter(button.dataset.filter);
   }));
+  applyProjectFilter('featured');
   document.getElementById('year').textContent = String(new Date().getFullYear());
 })();
