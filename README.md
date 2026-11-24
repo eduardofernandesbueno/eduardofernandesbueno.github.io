@@ -1,52 +1,59 @@
-# Eduardo Fernandes Bueno — Professional Portfolio 2027
+# Eduardo Fernandes Bueno — Professional Portfolio
 
-A static, accessible, English-language professional portfolio for Data Engineering, Data Architecture, Machine Learning, Data Governance, and R&D.
+Published at https://eduardofernandesbueno.github.io/ through GitHub Pages, from the root of `main`.
 
-## Status
+## Pages and languages
 
-**Local preview only. Not deployed.** The production URL (`https://eduardofernandesbueno.github.io/`) is the intended target and must be verified after publishing.
+| Language | Homepage | Professional Profile |
+| --- | --- | --- |
+| English | `/` | `/profile/` |
+| Brazilian Portuguese | `/pt/` | `/pt/profile/` |
+| Spanish | `/es/` | `/es/profile/` |
 
-## Architecture
+Each page contains static localized HTML, a self-referencing canonical URL, reciprocal language alternatives and structured data. Profile pages use `ProfilePage` and reference the same `Person` entity as the homepages. The sitemap contains these six routes.
 
-- `index.html` — semantic one-page site, Schema.org Person JSON-LD, Open Graph metadata.
-- `styles.css` — responsive styles, light/dark themes and reduced-motion support.
-- `script.js` — theme toggle, mobile navigation, filterable work cards.
-- `assets/favicon.svg` — original typographic favicon.
-- `robots.txt`, `sitemap.xml` — indexing support after publication.
-- `.nojekyll` — bypass Jekyll on GitHub Pages for direct static assets.
+## Professional information architecture
 
-No build process, package manager, third-party JavaScript, cookies, analytics or remote fonts are required.
+Six canonical pillars connect homepage focus links, expertise cards, profile evidence and the two conceptual diagrams:
+
+1. R&D & Research Engineering
+2. Data Engineering & Architecture
+3. Technical Project Management
+4. Technical Leadership & Software Engineering
+5. Applied Data Science & Machine Learning
+6. Data Governance & Responsible AI
+
+They describe areas of contribution, not formal appointments or measured proficiency. The profile retains fourteen sections, the twenty-area capability inventory, priority and complementary roles, and project-specific evidence and limits. Eleven selected-work projects retain their attribution, ordering and filters.
+
+## Static architecture
+
+- `index.html`, `pt/index.html`, `es/index.html`: localized homepages.
+- `profile/index.html`, `pt/profile/index.html`, `es/profile/index.html`: detailed professional profiles.
+- `styles.css`: shared visual system.
+- `assets/profile/profile.css`: scoped profile, navigation integration and pillar styles.
+- `script.js`: shared project filters, language/hash navigation, menu and persistent theme preference.
+- `.nojekyll`, `robots.txt`, `sitemap.xml`: GitHub Pages and discovery configuration.
+
+Native HTML, CSS and JavaScript; no framework, external runtime dependency or build step.
 
 ## Local preview
 
-From this directory:
+Run from the repository root:
 
 ```bash
-python3 -m http.server 8080
+python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Open `http://localhost:8080/`.
+Open http://127.0.0.1:8080/ and the other five routes. Stop the server with Ctrl+C.
 
-## Intended GitHub Pages repository
+## Review and publication
 
-`eduardofernandesbueno/eduardofernandesbueno.github.io`
+Use Simple → Clarify → Surgical → Verify. Compare against the published baseline; check all languages, internal anchors, project destinations, filters, menu, keyboard operation, persisted light/dark themes, metadata and structured data. Review layouts at 320, 375, 390, 768, 1024, 1440 and 1920 px. HTTP success alone does not establish visual or accessibility correctness. Record PASS, FAIL, BLOCKED or NOT RUN for each check.
 
-This is a **different repository** from the GitHub special profile README repository `eduardofernandesbueno/EduardoFernandesBueno`.
+Run `git diff --check` and review the exact changed paths and staging contents. Commit, push and deployment require the owner's express approval after review.
 
-## Publication checklist (approval required)
+## Evidence and privacy
 
-1. Verify account login and whether the Pages repository already exists.
-2. Review the content, links, university/project descriptions, and public-safe institutional statements.
-3. Run accessibility, responsive and link validation.
-4. Explicitly approve creating/updating the GitHub Pages repository.
-5. Upload the files to the repository, then configure GitHub Pages to deploy from `main` `/ (root)`.
-6. Verify the public URL, canonical URL, metadata, and sitemap.
-7. Only after the site is live, update the account's main Website field to the new Pages URL.
+Public pages summarize relevant verified facts and link to public artifacts. Academic marks retain the original 0–10 scale; reported scientific benchmarks retain their experimental limitations. Private transcripts, diplomas, contracts, recommendation letters, signatures, personal identifiers, protected datasets and institutional implementation are never repository assets. Retain private evidence and source/page review records physically outside every Git working tree. Do not add local-document links, symlinks, credentials or `.DS_Store` to publication.
 
-## Provenance and limitations
-
-- The featured research artifact, AppEvasão, and TCC links were publicly inspected on November 12, 2026.
-- Projects with unresolved security issues are intentionally not featured.
-- UNIDATA institutional code, endpoints, datasets and internal architecture are not included.
-- The SBIE publication is credited as coauthored research; the UNIVESP TCC is explicitly described as collaborative.
-- The site intentionally does not claim quantitative impact metrics, senior job titles, production MLOps experience or deployed systems without validated evidence.
+Academic prototypes and institutional MVPs are distinguished from production deployment. Historical Paió repositories require security and IP review before reuse or deployment. No secret rotation or history remediation is implied by this portfolio update.
