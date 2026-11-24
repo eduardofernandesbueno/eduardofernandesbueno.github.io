@@ -8,6 +8,13 @@
   <meta name="author" content="Eduardo Fernandes Bueno">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://eduardofernandesbueno.github.io/">
+  <link rel="alternate" hreflang="en" href="https://eduardofernandesbueno.github.io/">
+  <link rel="alternate" hreflang="pt-BR" href="https://eduardofernandesbueno.github.io/pt/">
+  <link rel="alternate" hreflang="es" href="https://eduardofernandesbueno.github.io/es/">
+  <link rel="alternate" hreflang="x-default" href="https://eduardofernandesbueno.github.io/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Eduardo Fernandes Bueno · Engineering & Research">
   <meta property="og:title" content="Eduardo Fernandes Bueno | Data Engineering, ML & Research">
@@ -15,30 +22,66 @@
   <meta property="og:url" content="https://eduardofernandesbueno.github.io/">
   <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#0d171a">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
   <title>Eduardo Fernandes Bueno — Data Engineering, Machine Learning & Research</title>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Eduardo Fernandes Bueno",
-    "alternateName": "Eduardo F. Bueno",
-    "url": "https://eduardofernandesbueno.github.io/",
-    "description": "Data Engineer, Data Scientist and M.Sc. candidate in Computer Science at the State University of Londrina, Brazil.",
-    "affiliation": {"@type": "CollegeOrUniversity", "name": "State University of Londrina", "alternateName": "UEL", "url": "https://www.uel.br/"},
-    "alumniOf": [
-      {"@type":"CollegeOrUniversity","name":"Virtual University of the State of São Paulo","alternateName":"UNIVESP"},
-      {"@type":"CollegeOrUniversity","name":"State University of Londrina","alternateName":"UEL"}
-    ],
-    "knowsAbout": ["Data Engineering", "Data Architecture", "Data Science", "Machine Learning", "Data Governance", "Educational Data Mining", "Learning Analytics"],
-    "sameAs": [
-      "https://github.com/eduardofernandesbueno",
-      "https://www.linkedin.com/in/eduardofernandesbueno/",
-      "http://lattes.cnpq.br/8716619580595259",
-      "https://orcid.org/0009-0000-8620-0211"
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Eduardo Fernandes Bueno",
+      "alternateName": "Eduardo F. Bueno",
+      "url": "https://eduardofernandesbueno.github.io/",
+      "description": "Data Engineer, Data Scientist and M.Sc. candidate in Computer Science at the State University of Londrina, Brazil.",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "State University of Londrina",
+        "alternateName": "UEL",
+        "url": "https://www.uel.br/"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Virtual University of the State of São Paulo",
+          "alternateName": "UNIVESP"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "State University of Londrina",
+          "alternateName": "UEL"
+        }
+      ],
+      "knowsAbout": [
+        "Data Engineering",
+        "Data Architecture",
+        "Data Science",
+        "Machine Learning",
+        "Data Governance",
+        "Educational Data Mining",
+        "Learning Analytics"
+      ],
+      "sameAs": [
+        "https://github.com/eduardofernandesbueno",
+        "https://www.linkedin.com/in/eduardofernandesbueno/",
+        "http://lattes.cnpq.br/8716619580595259",
+        "https://orcid.org/0009-0000-8620-0211"
+      ],
+      "@id": "https://eduardofernandesbueno.github.io/#person"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://eduardofernandesbueno.github.io/#webpage",
+      "url": "https://eduardofernandesbueno.github.io/",
+      "name": "Eduardo Fernandes Bueno — Data Engineering, Machine Learning & Research",
+      "inLanguage": "en",
+      "about": {
+        "@id": "https://eduardofernandesbueno.github.io/#person"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -49,6 +92,7 @@
       <a class="brand" href="#home" aria-label="Eduardo Fernandes Bueno — home"><span class="brand-mark" aria-hidden="true">E<span>.</span>F<span>.</span>B</span><span class="brand-caption">ENGINEERING / RESEARCH</span></a>
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#work">Selected work</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        <div class="language-switcher" role="group" aria-label="Language"><a href="/" lang="en" hreflang="en" data-language-link aria-label="English" aria-current="page">EN</a><a href="/pt/" lang="pt-BR" hreflang="pt-BR" data-language-link aria-label="Português brasileiro">PT</a><a href="/es/" lang="es" hreflang="es" data-language-link aria-label="Español">ES</a></div>
       </nav>
       <div class="header-actions">
         <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme" title="Toggle light/dark mode"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 14.1A8 8 0 0 1 9.9 4 8 8 0 1 0 20 14.1Z"/></svg></button>
@@ -235,6 +279,6 @@
     <section id="contact" class="section contact-section container"><p class="section-label">06 / CONTACT & COLLABORATION</p><div class="contact-grid"><div><h2>Let's build<br><em>reliable systems.</em></h2><p>Open to conversations about Data Engineering, Data Architecture, Data Science, Applied AI, Research Engineering, academic collaboration and R&amp;D.</p></div><div class="contact-links"><a href="https://www.linkedin.com/in/eduardofernandesbueno/" target="_blank" rel="noopener noreferrer"><span>Connect on LinkedIn</span><span aria-hidden="true">↗</span></a><a href="https://github.com/eduardofernandesbueno" target="_blank" rel="noopener noreferrer"><span>Explore GitHub</span><span aria-hidden="true">↗</span></a><a href="http://lattes.cnpq.br/8716619580595259" target="_blank" rel="noopener noreferrer"><span>Curriculum Lattes</span><span aria-hidden="true">↗</span></a><a href="https://orcid.org/0009-0000-8620-0211" target="_blank" rel="noopener noreferrer"><span>ORCID research record</span><span aria-hidden="true">↗</span></a></div></div></section>
   </main>
   <footer class="site-footer"><div class="container footer-inner"><span>© <span id="year">2026</span> Eduardo Fernandes Bueno</span><span>Engineering · Research · Governance</span><a href="#home">Back to top ↑</a></div></footer>
-  <script src="script.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>
